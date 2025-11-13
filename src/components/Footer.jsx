@@ -25,16 +25,54 @@ export default function Footer() {
 
           {/* Social / follow */}
           <div className="flex items-center justify-start gap-4 md:justify-end">
-            <button className="rounded-full bg-violet-500/10 px-4 py-2 text-sm hover:bg-violet-500/20">
+            <a
+              href="https://www.instagram.com/scaena.art/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-violet-500/10 px-4 py-2 text-sm hover:bg-violet-500/20"
+            >
               ♥ Follow on shop
-            </button>
+            </a>
+
             <div className="flex items-center gap-4 text-xl">
-              <FaInstagram />
-              <FaTiktok />
-              <FaPinterest />
-              <FaXTwitter />
+              <a
+                href="https://www.instagram.com/scaena.art/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-violet-500 transition"
+              >
+                <FaInstagram />
+              </a>
+
+              <a
+                href="https://www.tiktok.com/explore"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-violet-500 transition"
+              >
+                <FaTiktok />
+              </a>
+
+              <a
+                href="https://scaenastudio.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-violet-500 transition"
+              >
+                <FaPinterest />
+              </a>
+
+              <a
+                href="https://scaenastudio.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-violet-500 transition"
+              >
+                <FaXTwitter />
+              </a>
             </div>
           </div>
+
         </div>
 
         {/* Payment badges */}
