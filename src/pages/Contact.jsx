@@ -111,13 +111,13 @@ export default function Contact() {
             <p>
               📧{" "}
               <a
-                href="mailto:contact@archearchives.com"
+                href="mailto:Equesfortuna@gmail.com"
                 className="text-neutral-900 underline hover:text-neutral-600"
               >
-                contact@archearchives.com
+                Equesfortuna@gmail.com
               </a>
             </p>
-            <p>📍 Lagos, Nigeria</p>
+            <p>📍 Fort Knox, KY USA</p>
           </div>
         </div>
       </section>

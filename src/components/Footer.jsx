@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-6 text-xs opacity-60">
-          © {new Date().getFullYear()}, Scaena Studio — Privacy policy
+          © {new Date().getFullYear()}, Scaena Studio — Eques Fortuna — Privacy policy
         </p>
       </Container>
     </footer>
