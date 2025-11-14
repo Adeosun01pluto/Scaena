@@ -6,6 +6,7 @@ import { useStore } from "../context/Store.jsx";
 import Container from "./UI/Container.jsx";
 import { auth } from "../lib/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
+import logo from "../assets/logo.jpg";
 
 export default function Header() {
   const { state, setSearch } = useStore();
@@ -135,9 +136,10 @@ export default function Header() {
 
   return (
     <header className="sticky top-[40px] w-full border-b border-stone-300 bg-white z-[1000] backdrop-blur">
-      <Container className="flex h-20 md:h-24 items-center justify-between">
+      <Container className="relative flex h-20 md:h-24 items-center justify-between">
+
         {/* Left side */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 z-10">
           <button
             onClick={() => setOpen(true)}
             className="lg:hidden p-2"
@@ -156,21 +158,21 @@ export default function Header() {
           </nav>
         </div>
 
-        {/* Center logo */}
-        <Link to="/" className="text-3xl md:text-5xl font-semibold tracking-widest">
-          세나
+        {/* CENTERED LOGO — always middle */}
+        <Link
+          to="/"
+          className="absolute left-1/2 -translate-x-1/2 text-3xl md:text-5xl font-semibold tracking-widest"
+        >
+          <img src={logo} className="w-20 md:w-24 h-auto object-contain" alt="Scaena Logo" />
         </Link>
 
         {/* Right side */}
-        <div className="flex items-center gap-2 md:gap-3">
-          {/* Search toggle button */}
+        <div className="flex items-center gap-2 md:gap-3 z-10">
           <button
             onClick={() =>
               setShowSearch((prev) => {
                 const next = !prev;
-                if (!next) {
-                  setSearch("");
-                }
+                if (!next) setSearch("");
                 return next;
               })
             }
@@ -180,7 +182,6 @@ export default function Header() {
             <Search />
           </button>
 
-          {/* Auth area */}
           {user ? (
             <>
               <button
@@ -208,7 +209,6 @@ export default function Header() {
             </button>
           )}
 
-          {/* Cart */}
           <button
             onClick={() => navigate("/cart")}
             className="relative p-2"
@@ -223,6 +223,7 @@ export default function Header() {
           </button>
         </div>
       </Container>
+
 
       {/* Search bar */}
       {showSearch && (
