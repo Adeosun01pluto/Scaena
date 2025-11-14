@@ -29,42 +29,24 @@ isSupported().then((ok) => { if (ok) getAnalytics(app); });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// // src/lib/firebase.js
-// import { initializeApp, getApps } from "firebase/app";
-// import { getAnalytics, isSupported as analyticsSupported } from "firebase/analytics";
-// import { getFirestore } from "firebase/firestore";
-// import { getAuth } from "firebase/auth";
-// import { getStorage } from "firebase/storage";
-
+// // Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
 
 // // Your web app's Firebase configuration
 // // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 // const firebaseConfig = {
-//   apiKey: "AIzaSyCqR1aQ03MDAYo-8EpZVdMd3oimogl_uko",
-//   authDomain: "scaena-14226.firebaseapp.com",
-//   projectId: "scaena-14226",
-//   storageBucket: "scaena-14226.firebasestorage.app",
-//   messagingSenderId: "505172536274",
-//   appId: "1:505172536274:web:796f1ffadf7af7a030f60b",
-//   measurementId: "G-KS36NSFR38"
+//   apiKey: "AIzaSyDR1bznJFPOMAK4TY2kiTmWD1MfFKU9uic",
+//   authDomain: "scaena-studio.firebaseapp.com",
+//   projectId: "scaena-studio",
+//   storageBucket: "scaena-studio.firebasestorage.app",
+//   messagingSenderId: "764023443410",
+//   appId: "1:764023443410:web:4b17586419d0b0d644820b",
+//   measurementId: "G-V1D16M6HJT"
 // };
 
-// const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
-
-// // Optional analytics (browser only)
-// analyticsSupported().then((ok) => { if (ok) getAnalytics(app); }).catch(() => {});
-
-// export const db = getFirestore(app);
-// export const auth = getAuth(app);
-// export const storage = getStorage(app);
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
