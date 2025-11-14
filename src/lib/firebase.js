@@ -22,31 +22,3 @@ isSupported().then((ok) => { if (ok) getAnalytics(app); });
 
 
 
-
-
-
-
-
-
-
-// // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// import { getAnalytics } from "firebase/analytics";
-// // TODO: Add SDKs for Firebase products that you want to use
-// // https://firebase.google.com/docs/web/setup#available-libraries
-
-// // Your web app's Firebase configuration
-// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDR1bznJFPOMAK4TY2kiTmWD1MfFKU9uic",
-//   authDomain: "scaena-studio.firebaseapp.com",
-//   projectId: "scaena-studio",
-//   storageBucket: "scaena-studio.firebasestorage.app",
-//   messagingSenderId: "764023443410",
-//   appId: "1:764023443410:web:4b17586419d0b0d644820b",
-//   measurementId: "G-V1D16M6HJT"
-// };
-
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
