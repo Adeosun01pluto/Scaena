@@ -8,6 +8,8 @@ import { db } from "../lib/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import Contact from "./Contact";
 import About from "./About";
+import HeroImg1 from "../assets/HeroImh1.webp";
+import HeroImg2 from "../assets/HeroImg2.webp";
 
 export default function Home() {
   const [featured, setFeatured] = useState([]);
@@ -76,10 +78,11 @@ export default function Home() {
       <main>
         {/* Hero 1 – split images with richer animation */}
         <HeroSection
-          image={[
-            "https://scaenastudio.com/cdn/shop/files/IMG_3585.jpg?v=1756883814&width=1100",
-            "https://scaenastudio.com/cdn/shop/files/IMG_3584.jpg?v=1756883129&width=1100",
-          ]}
+          // image={[
+          //   "https://scaenastudio.com/cdn/shop/files/IMG_3585.jpg?v=1756883814&width=1100",
+          //   "https://scaenastudio.com/cdn/shop/files/IMG_3584.jpg?v=1756883129&width=1100",
+          // ]}
+          image={[HeroImg1, HeroImg2]}
           title="Future Collections"
           subtitle="An invitation to what is taking shape beyond the canvas."
           buttonText="Discover What's Next"
