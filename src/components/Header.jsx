@@ -153,7 +153,7 @@ export default function Header() {
             <NavLink to="/" className="hover:underline">Home</NavLink>
             <NavLink to="/collections" className="hover:underline">Collection</NavLink>
             <NavLink to="/artworks" className="hover:underline">Artworks</NavLink>
-            <NavLink to="/about" className="hover:underline">About</NavLink>
+            <NavLink to="/about" className="hover:underline">About Us</NavLink>
             <NavLink to="/contact" className="hover:underline">Contact</NavLink>
           </nav>
         </div>
@@ -295,7 +295,7 @@ export default function Header() {
                   Artworks
                 </NavLink>
                 <NavLink to="/about" onClick={() => setOpen(false)} className="py-3 border-b">
-                  About
+                  About Us
                 </NavLink>
                 <NavLink to="/contact" onClick={() => setOpen(false)} className="py-3 border-b">
                   Contact
