@@ -166,7 +166,7 @@ export default function Home() {
               </motion.div>
             ) : featured.length > 0 ? (
               // ✅ Data state
-              <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {featured.map((item, index) => (
                   <ProductCard key={item.id} item={item} index={index} />
                 ))}
