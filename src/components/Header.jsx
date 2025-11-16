@@ -152,8 +152,8 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-6 text-sm md:text-md">
             <NavLink to="/" className="hover:underline">Home</NavLink>
             <NavLink to="/collections" className="hover:underline">Collection</NavLink>
-            <NavLink to="/supplies" className="hover:underline">Supplies</NavLink>
             <NavLink to="/artworks" className="hover:underline">Artworks</NavLink>
+            <NavLink to="/about" className="hover:underline">About</NavLink>
             <NavLink to="/contact" className="hover:underline">Contact</NavLink>
           </nav>
         </div>
@@ -291,11 +291,11 @@ export default function Header() {
                 <NavLink to="/collections" onClick={() => setOpen(false)} className="py-3 border-b">
                   Collection
                 </NavLink>
-                <NavLink to="/supplies" onClick={() => setOpen(false)} className="py-3 border-b">
-                  Supplies
-                </NavLink>
                 <NavLink to="/artworks" onClick={() => setOpen(false)} className="py-3 border-b">
                   Artworks
+                </NavLink>
+                <NavLink to="/about" onClick={() => setOpen(false)} className="py-3 border-b">
+                  About
                 </NavLink>
                 <NavLink to="/contact" onClick={() => setOpen(false)} className="py-3 border-b">
                   Contact

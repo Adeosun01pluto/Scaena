@@ -279,7 +279,7 @@ export default function HeroSection({
                 <motion.button
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.97 }}
-                  className="group relative inline-flex items-center gap-3 overflow-hidden bg-white px-9 py-3 text-xs md:text-sm font-medium tracking-[0.18em] text-neutral-900 uppercase"
+                  className="relative inline-flex items-center gap-3 overflow-hidden bg-white px-9 py-3 text-xs md:text-sm font-medium tracking-[0.18em] text-neutral-900 uppercase"
                 >
                   <span className="relative z-10">{buttonText}</span>
                   <ArrowRight

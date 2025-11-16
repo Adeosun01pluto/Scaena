@@ -225,9 +225,17 @@ export default function Artworks() {
       <section className="py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {loading ? (
-            <p className="text-center text-white/70 py-12">
-              Loading artworks...
-            </p>
+            // 🔄 Loading state
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="text-center py-20"
+              >
+                <div className="inline-block animate-spin rounded-full h-10 w-10 border-b-2 border-white" />
+                <p className="mt-4 text-white">
+                  Loading featured artworks...
+                </p>
+              </motion.div>
           ) : filteredAndSorted.length > 0 ? (
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {filteredAndSorted.map((item, index) => (
